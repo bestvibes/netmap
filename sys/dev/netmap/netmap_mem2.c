@@ -52,6 +52,7 @@ __FBSDID("$FreeBSD: head/sys/dev/netmap/netmap.c 241723 2012-10-19 09:41:45Z gle
 
 #include <net/netmap.h>
 #include <dev/netmap/netmap_kern.h>
+#include <linux/vmalloc.h>
 #include "netmap_mem2.h"
 
 #define NETMAP_BUF_MAX_NUM	20*4096*2	/* large machine */
